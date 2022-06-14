@@ -1,0 +1,21 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../assets/itachi.jpg") no-repeat 25% 20%;
+  color: $white;
+  font-family: $body-font, "sans-serif";
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}

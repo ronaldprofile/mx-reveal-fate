@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url("../assets/itachi.jpg") no-repeat 25% 20%;
+  color: #ffffff;
+  font-family: "Roboto", "sans-serif";
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+#container {
+  margin-top: 100px;
+  max-width: 400px;
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+#container h1 {
+  margin: 40px 0 10px 0;
+  opacity: 0.9;
+}
+
+#container p {
+  margin-bottom: 40px;
+  opacity: 0.7;
+}
+
+#container a {
+  color: #ffffff;
+  font-style: italic;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#container a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.form input,
+.form button {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.form button {
+  background: #7e22ce;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  outline-color: #7e22ce;
+}
+
+.form button:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+#box-response {
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+#box-response.show {
+  -webkit-animation: toggle 0.6s ease-in-out;
+          animation: toggle 0.6s ease-in-out;
+}
+
+#box-response div span {
+  font-size: 16px;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+@-webkit-keyframes toggle {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes toggle {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=main.css.map */
